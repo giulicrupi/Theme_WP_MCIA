@@ -1,0 +1,363 @@
+@import "../blog/blog";
+
+.single-projetos{
+	.menu-pri{
+
+		background: black;
+		box-shadow: 0 0 1em black;		
+	}
+}
+.banner-projeto{
+	background-size: cover;
+	background-position: center;
+	.overlay{
+	    padding: 15% 0%;
+		&:before{
+			content: "";
+		    display: block;
+	background-size: cover;
+	background-position: bottom;		    
+		    height: 100%;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		   background-image: url(http://localhost/mcia/wp-content/uploads/2022/05/over.png);
+		    // mix-blend-mode: multiply;			
+		}
+		.container{
+			position: relative;
+			.titulo{
+				padding: 0 12%;
+				.title{
+				    font-size: 50px;
+				    font-weight: 500;
+				    letter-spacing: 2px;	
+				    margin-top: 3%;				
+				}
+			}
+			.logo{
+			    width: 70%;
+			    filter: brightness(0)invert(1);				
+			}
+			.cliente{
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+
+			    .content{
+			    	width: fit-content;
+
+			    	.text{
+					    text-transform: uppercase;
+					    letter-spacing: 3px;
+					    font-weight: 400;			    		
+			    	}
+			    	.nome-cliente{
+					    background: black;
+					    color: white;
+					    padding: 4% 4%;
+					    font-weight: 500;
+					    letter-spacing: 1px;
+					    margin-top: 3%;
+					    border-radius: 4px;
+					    box-shadow: 0 0 1em black;			    		
+			    	}
+			    }				
+			}
+		}
+	}
+}
+.sect1-projeto{
+	// background: linear-gradient(180deg, #d9c3b8, transparent);	
+	background: black;
+	color: white;
+	padding: 3% 0;
+
+	.container{
+		max-width: 85%;
+
+		.conteudo{
+			padding-right: 10%;
+			.nome-sec{
+			    text-transform: uppercase;
+			    letter-spacing: 4px;
+			    font-weight: 100;
+			    font-size: 12px;				
+			}
+			.title{
+			    font-size: 50px;
+			    font-weight: 500;
+			    margin-bottom: 3%;				
+			}
+			.conceito{
+			    font-weight: 100;
+			    font-size: 22px;
+			    text-align: justify;				
+			}
+		}
+		.imagem-conceito{
+		    max-width: 100%;
+		    -webkit-mask-image: url(http://localhost/mcia/wp-content/uploads/2022/05/mask.png);
+		    -webkit-mask-size: cover !important;
+		    -webkit-mask-repeat: no-repeat;
+		    -webkit-mask-position: center;
+		    padding: 50% 0%;
+		    background-position: left;
+		    background-size: cover;		
+		}
+		.alinhar{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+.sect2-projeto{
+	background: #fff;
+	padding: 4% 0;
+
+	.container{
+		max-width: 85%;
+		.alinhar{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}		
+		.conteudo{
+			padding-right: 10%;
+			.nome-sect{
+			    text-transform: uppercase;
+			    letter-spacing: 4px;
+			    font-weight: 100;
+			    font-size: 12px;				
+			}
+			.title{
+			    font-size: 50px;
+			    font-weight: 500;
+			    margin-bottom: 3%;				
+			}
+			.conceito{
+			    font-weight: 100;
+			    font-size: 22px;
+			    text-align: justify;				
+			}
+		}		
+	}
+}
+.sect3-projeto{
+	background: black;
+	padding: 4% 0;
+	color: #fff;
+	.container{
+		max-width: 85%;
+		.title{
+		    font-size: 50px;
+		    font-weight: 500;
+		    margin-bottom: 3%;				
+		}			
+	}
+	.galeria-projetos{
+		.img-kvs{
+			position: relative;
+			background-size: cover;
+			background-position: top;
+			.overlay{
+			    padding: 35% 0%;	
+					&:before{
+						content: "";
+					    display: block;
+				background-size: cover;
+				background-position: bottom;		    
+					    height: 100%;
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					    width: 100%;
+						background: linear-gradient(0deg, #ffffff , transparent 40%);
+					    // mix-blend-mode: multiply;			
+					}
+
+				.desc{
+				    display: flex;
+				    position: absolute;
+				    bottom: 0%;
+				    width: 100%;
+				    padding: 2% 2%;
+				    align-items: center;	
+				    
+				    .legenda{
+						text-transform: uppercase;
+					    font-weight: 100;
+					    font-size: 14px;
+					    letter-spacing: 1px;	
+					    color: #820415;			    	
+				    }		
+				    hr{
+					    border: 1px solid #820415 ;
+					    width: 55%;
+					    margin-right: 0;
+					    border-radius: 50%;				    	
+				    }		
+				}				    
+			}
+		}
+	}
+	.slick-arrow{
+	    background: white!important;
+	    border-radius: 3px;
+	    padding: 2% 0%;	
+	    bottom: 40%;    
+	    
+	    &:before{
+	    	filter: invert(1);
+	    }	
+	}
+	.slick-next{
+		left: inherit;
+		right: 2%;
+	}
+	.slick-prev{
+		left: 2%;
+	}
+}
+
+.sect4-projetos{
+    padding: 0% 0 3% 0;
+    position: relative;
+    transition: 0.5s;
+   background: linear-gradient(181deg, black 30%, #840015);
+ 
+	.c-1{
+		max-width: 80%;
+		.title{
+		    font-size: 50px;
+		    font-weight: 500;
+		    margin-bottom: 3%;	
+		    color: white;			
+		} 		
+	}  
+	.cont{
+		position: relative;
+
+	    margin-top: 5%;
+	    margin-bottom: 3%;
+		.notbook{
+		    
+		    height: 478px;
+		    position: relative;
+		    overflow: scroll;
+
+
+			}
+		::-webkit-scrollbar {
+		  width: 0px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		  box-shadow: inset 0 0 5px transparent; 
+		  border-radius: 0px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: transparent; 
+		  border-radius: 0px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		  background: transparent; 
+		}	
+		.not{
+		    position: absolute;
+		    left: 0%;
+		    top: -9%;			
+		}		
+	}
+	.mobiles{
+		filter: drop-shadow(2px 4px 6px #ffffff82);
+	}
+}
+
+.sect5-projetos{
+    padding: 4% 0 5% 0;
+    border-bottom: 1px solid silver;
+	.container{
+		max-width: 85%;
+		.title{
+		    font-size: 50px;
+		    font-weight: 500;
+		    margin-bottom: 3%;	
+		    color: black;			
+		} 
+		.conteudo{
+			margin-top: 5%;
+			.number{
+			    font-size: 70px;
+			    font-weight: 400;
+			    letter-spacing: 2px;
+			    line-height: 120%;				
+			}
+			.sub-title{
+				text-transform: uppercase;
+			    letter-spacing: 2px;
+			    font-size: 15px;
+			    font-weight: 300;				
+			}
+		}
+		.tempo{
+			font-weight: 100;
+		    font-size: 26px;
+		    display: flex;
+		    justify-content: center;
+		    margin-top: 4%;	
+		    p{
+			    background: black;
+			    color: white;
+			    padding: 1% 2%;
+			    border-radius: 4px;
+			    box-shadow: 0 0 1em black;		
+			    
+			    span{
+					font-weight: 400;
+				    font-size: 45px;			    	
+			    }    	
+		    }		
+		}
+	}
+}
+.single-projetos{
+	.sect3{
+		padding-top: 3%;
+		padding-bottom: 4%;
+		.conteudo{
+			opacity: 1;
+
+			.sub{
+			font-size: 30px;
+		    font-weight: 100;
+		    letter-spacing: 2px;				
+			}
+
+		}
+		.desabilitado{
+			text-decoration: line-through;
+		}
+	}
+}
+// .fixar{
+//     position: fixed;
+//     top: 0%;
+//     width: 100%;
+//     background: white;
+//     z-index: 1050;
+//     height: 100%;	
+// }
+// body{
+// 	transition: .5s;
+// }
+// .trava{
+// 	overflow: hidden;
+// }
